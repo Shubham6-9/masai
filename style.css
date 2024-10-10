@@ -27,12 +27,17 @@ body{
     margin: 0 20%;
     padding: 2%;
 }
-.line1{
+.line1, .line2, .line3{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.line1>div{
+.line4{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.line1>div, .line2>div, .line3>div, .line4>div{
     background-size: cover;
     background-position: center;
     width: 300px;
@@ -56,15 +61,15 @@ body{
 .line1>div:last-child{
     background-image: url("./assets/image/keshav.jpeg");
 }
-.line1>div:hover{
+.line1>div:hover, .line2>div:hover, .line3>div:hover, .line4>div:hover{
     height: 350px;
     width: 320px;
 }
-.line1 p{
+.line1 p, .line2 p, .line3 p, .line4 p{
     color: white;
     text-align: center;
 }
-.line1 p:last-child{
+.line1 p:last-child, .line2 p:last-child, .line3 p:last-child, .line4 p:last-child{
     font-size: 25px;
     font-weight: 500;
 }
@@ -78,24 +83,6 @@ body{
     padding: 10px;
     margin-bottom: -35%;
 }
-
-.line2{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.line2>div{
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 330px;
-    border-radius: 10%;
-    margin: 18px 18px;
-    transition: 0.6s ease;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-}
 .line2>div:first-child{
     background-image: url("./assets/image/Ishita.jpg");
 }
@@ -108,15 +95,26 @@ body{
 .line2>div:last-child{
     background-image: url("./assets/image/Mohammed.jpg");
 }
-.line2>div:hover{
-    height: 350px;
-    width: 320px;
+
+.line3>div:first-child{
+    background-image: url("./assets/image/Anurag.jpg");
 }
-.line2 p{
-    color: white;
-    text-align: center;
+.line3>div:nth-child(2){
+    background-image: url("./assets/image/Kishore.jpg");
 }
-.line2 p:last-child{
-    font-size: 25px;
-    font-weight: 500;
+.line3>div:nth-child(3){
+    background-image: url("./assets/image/Rohit_Gupta.jpg");
+}
+.line3>div:last-child{
+    background-image: url("./assets/image/Mayank.jpg");
+}
+
+.line4>div:first-child{
+    background-image: url("./assets/image/karthika_Karthika.jpeg");
+}
+.line4>div:nth-child(2){
+    background-image: url("./assets/image/Viren.jpg");
+}
+.line4>div:last-child{
+    background-image: url("./assets/image/Ankit.jpeg");
 }
